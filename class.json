@@ -1,0 +1,535 @@
+[
+    {
+        "id" : 1,
+        "name" : "The Face",
+        "image" : "/SS-img/the-face.png",
+        "description" : [
+            "สายลับพันหน้าที่เน้นการกลมกลืนไปกับฝูงชน เป็นอาชีพที่เชี่ยวชาญด้านการหลอกลวงและการปั่นหัว สามารถซ่อนในที่แจ้งและแอบสั่งการได้อย่างแนบเนียน จริงอยู่ที่สปายควรจะโกหกและใช้ชีวิตสองหน้าได้ราวกับทำได้ตั้งแต่เกิด แต่ The Face นั้นมีความเชี่ยวชาญจนสามารถเปลี่ยนแปลงได้ตั้งแต่ท่วงท่า กิริยา การเดิน บุคลิกภาพและมารยาท ราวกับเป็นคนละคน เน้นใช้การหลอกล่อให้เคลิ้มหรือคล้อยตาม เน้นจู่โจมจากการฉวยโอกาส สามารถเนียนไปกับคนอื่นหรือเรียกความสนใจให้ทุกคนจดจ้องได้",
+            "ทำให้ The Face นั้นต้องเป็นตัวละครที่พูดคุยและคลุกคลีกับตัวละครทุกประเภทได้ดี เหมาะกับคนที่ชอบพูดเสี้ยมเพื่อสร้างหรือคลี่คลายสถานการณ์ ชอบการซ่อนตัวและการควบคุมปั่นหัว ใช้คำพูดของตัวเองเป็นอาวุธ"
+        ],
+        "stat" : "CHA และ WIS เสริมด้วย DEX",
+        "savingthrow" : ["DEX", "CHA"],
+        "sk_choose" : 3,
+        "skills" : [
+            "Deception",
+            "Espionage",
+            "Infiltration",
+            "Insight",
+            "Perception",
+            "Persuasion",
+            "Sleight of Hand",
+            "Stealth"
+        ],
+        "armor" : "Light Armor",
+        "range" : "Simple Ranged Weapons",
+        "malee" : "Simple Malee Weapons",
+        "t_given" : ["Disguise Kit", "Forgery Kit"],
+        "t_choose" : 0,
+        "tools" : [],
+        "vh_given" : [],
+        "vh_choose" : 2,
+        "vehicle" : [
+            "Cars",
+            "Helicopters",
+            "Motorbikes",
+            "Planes"
+        ],
+        "begin" : [
+            ["(a)<br>light pistol", "(b)<br>knife", "(c )<br>garrote string"],
+            ["(a)<br>undercover vest", "(b)<br>leather clothing"],
+            ["(a)<br>diplomat pack<br>(แพ็คการทูต)", "(b)<br>undercover pack<br>(แพ็คสายลับ)"],
+            ["(a)<br>disguise kit<br>(เครื่องมือปลอมตัว)", "(b)<br>forgery kit<br>(เครื่องมือปลอมแปลงเอกสาร)"]
+        ],
+        "itempic" : [
+            ["SS-img/ss-item/26-pistol.png", "SS-img/ss-item/13-knife.png", "SS-img/ss-item/11-garrote-string.png"],
+            ["SS-img/ss-item/03-undercover-vest.png", "SS-img/ss-item/01-leather-clothing.png"],
+            ["SS-img/ss-item/69-pack.png", "SS-img/ss-item/69-pack.png"],
+            ["SS-img/ss-item/68-disguise-kit.png", "SS-img/ss-item/69-pack.png"]
+        ],
+        "cando" : [
+            "นั่นคือการแปลงโฉมปลอมตัวเพื่อแทรกซึมเข้าไปในกลุ่มฝูงชน แม้ทุกคนจะสามารถปลอมตัวได้ดังที่สายลับทุกคนควรทำแต่เมื่อเทียบกับ The Face แล้วการปลอมตัวของอาชีพอื่นก็เป็นเหมือนมือสมัครเล่น โดยการแปลงโฉมของอาชีพนี้จะแบ่งออกเป็น 3 ประเภท ดังนี้",
+            {
+                "sub" : "THE GRAY MAN",
+                "desc" : [
+                    "เน้นการปลอมตัวเป็นกลุ่มนักธุรกิจหรือกลุ่มพนักงานตำแหน่งเล็ก ๆ เพื่อสังเกตการณ์",
+                    "สามารถเดินเข้าออกในพื้นที่และเปลี่ยนกลุ่มคนที่คลุกคลีด้วยได้ โดยทำให้คนลืมตัวเองได้ไวที่สุดและไม่ตกเป็นจุดสนใจ",
+                    "หากเกิดการต่อสู้ขึ้น จะไม่ตกเป็นเป้าหมายของการโจมตีจนกว่าจะเริ่มจู่โจมอีกฝ่าย"
+                ]
+            },
+            {
+                "sub" : "MASTER MANIPULATOR",
+                "desc" : [
+                    "เน้นไปที่การเข้าหาเป้าหมาย ใช้ค่า Insight สูงเพราะต้องอาศัยความเข้าใจในจิตใจของผู้อื่น",
+                    "สามารถใช้จิตวิทยาในการบงการคนที่คุยให้คล้อยตามโดยไม่รู้ตัวด้วยบทสนทนาที่เป็นธรรมชาติ",
+                    "ดึงความสนใจจากสิ่งหนึ่งไปยังสิ่งหนึ่งได้",
+                    "สามารถตีสนิทกับคนที่คุยด้วยเพื่อใช้ประโยชน์ได้ และคนที่ตีสนิทด้วยจะไม่โจมตีจนกว่าจะเริ่มจู่โจมอีกฝ่าย"
+                ]
+            },
+            {
+                "sub" : "CELEBRITY",
+                "desc" : [
+                    "การปลอมตัวแบบพิเศษที่จำเป็นต้องใช้ตัวละครที่มีอาชีพบังหน้าเป็นนักแสดงหรือคนในแวดวงบันเทิงเท่านั้น",
+                    "ใช้อาชีพในการดึงดูดความสนใจ",
+                    "มีสิทธิพิเศษในการเข้าพื้นที่หรือถูกเชื้อเชิญเข้าพื้นที่พิเศษได้",
+                    "ตัวละครของคุณจะมีความสามารถในการหลบเลี่ยงกล้องทุกประเภทได้ดีขึ้น (มีโอกาสสำเร็จจากการทอยเต๋ามากขึ้น)",
+                    "มีข้อจำกัดคือ เข้าพื้นที่ห้วงห้ามยากกว่าคนอื่น ๆ เพราะทุกคนจำได้ ถ้าอยากเข้าต้องเปิดก่อนเท่านั้น"
+                ]
+            }
+        ]
+    },
+
+    {
+        "id" : 2,
+        "name" : "The Hacker",
+        "image" : "/SS-img/the-hacker.png",
+        "description" : [
+            "แฮ็กเกอร์จะถูกค้นพบได้จากผลงานของพวกเขา อาชีพที่ใช้โค้ดเพียงไม่กี่บรรทัดก็สามารถทำงานของตัวเองได้แล้ว สามารถแทรกซึมเข้าสู่พื้นที่ห้ามเข้าได้ด้วยการแฮ็ก หรืออาจทำได้กระทั่งลบเพื่อนร่วมทีมให้หายจากภาพฉายดาวเทียม หรือตัดระบบการสื่อสาร ตัวละครที่จะเป็นแฮ็กเกอร์ได้นั้นจะต้องมีความรู้ด้านคอมพิวเตอร์ขั้นสูง รวมไปถึงการเข้าและถอดรหัสทางคอมพิวเตอร์ต่าง ๆ ได้ด้วย",
+            "หน้าที่ของอาชีพนี้คือ ควบคุมโค้ด และแทรกซึมเข้าสู่ระบบคอมพิวเตอร์ เข้าถึงเครื่องมือต่าง ๆ เหมาะสำหรับคนที่อยากใช้เทคนิคหรือความสามารถในการช่วยเพื่อนร่วมทีม ชิงไหวชิงพริบกับศัตรู"
+        ],
+        "stat" : "INT และ CHA เสริมด้วย DEX (เผื่อกรณีที่ต้องต่อสู้)",
+        "savingthrow" : ["INT", "CHA"],
+        "sk_choose" : 4,
+        "skills" : [
+            "Deception",
+            "Espionage",
+            "Infiltration",
+            "Infotech",
+            "Mechanics",
+            "Persuasion",
+            "Sleight of Hand",
+            "Stealth"
+        ],
+        "armor" : "Light Armor",
+        "range" : "Simple Ranged Weapons",
+        "malee" : "Simple Malee Weapons",
+        "t_given" : ["Hacking Tools"],
+        "t_choose" : 0,
+        "tools" : [],
+        "vh_given" : [],
+        "vh_choose" : 1,
+        "vehicle" : [
+            "Cars",
+            "Motorbikes"
+        ],
+        "begin" : [
+            ["(a)<br>laptop", "(b)<br>tablet"],
+            ["(a)<br>taser", "(b)<br>baton"],
+            ["(a)<br>leather clothing"],
+            ["(a)<br>wet work pack<br>(แพ็คลอบสังหาร)", "(b)<br>investigation pack<br>(แพ็คสืบสวน)"]
+        ],
+        "itempic" : [
+            ["SS-img/ss-item/58-laptop.png", "SS-img/ss-item/59-tablet.png"],
+            ["SS-img/ss-item/27-taser.png", "SS-img/ss-item/10-baton.png"],
+            ["SS-img/ss-item/01-leather-clothing.png"],
+            ["SS-img/ss-item/69-pack.png", "SS-img/ss-item/67-investigation-pack.png"]
+        ],
+        "cando" : [
+            "อาชีพนี้เป็นอาชีพที่สามารถเล่นได้ทั้งสายภาคสนามและสายการสร้าง ทั้งการแบกมือถือ แท็บเล็ตหรือแล็บท็อปเพื่อแฮ็กข้อมูล หรือสามารถที่จะเขียนโค้ดอัตโนมัติแล้วนำมันให้นักแทรกซึมหรือเพื่อนร่วมทีมใช้ในภาคสนามก็ได้ สามารถแยกหน้าที่ง่าย ๆ ได้ดังนี้",
+            [
+                "แฮ็กระบบต่าง ๆ ของศัตรู",
+                "ป้องกันหรือวางกับดักศัตรูที่แฮ็กเข้าระบบคอมพิวเตอร์ของเรา",
+                "เขียนโปรแกรมเฉพาะตามจุดประสงค์ที่ต้องการใส่ลงในที่เก็บข้อมูลพกพาหรืออื่น ๆ",
+                "แก้ไขดัดแปลงโค้ดหรือโปรแกรมต่าง ๆ"
+            ],
+            "โดยแฮ็กเกอร์สามารถเลือกตามไปที่ภาคสนามหรืออยู่รอแฮ็กข้อมูลในเวิร์คช็อปได้ตามใจ"
+        ]
+    },
+
+    {
+        "id" : 3,
+        "name" : "The Infiltrator",
+        "image" : "/SS-img/the-infiltrator.png",
+        "description" : [
+            "นักแทรกซึมผู้ถูกฝึกให้หลบซ่อนตัวอยู่ในเงามืดหรือยามกลางคืน ต่างจาก The Face ที่เป็นคนคอยทำงานท่ามกลางผู้คน เป็นหน้าที่ที่ต้องการความชำนาญในการแทรกซึมโดยที่ไม่ถูกจับได้ว่าเกิดสิ่งผิดปกติ โดยงานหลัก ๆ นอกเหนือจากการเข้าไปในพื้นที่นั้นจะมีอยู่สามอย่างได้แก่ การจารกรรม ลอบฆ่า และดึงข้อมูล หรือบางครั้งอาจร่วมมือกับแฮ็กเกอร์ก็ได้",
+            "อาชีพนี้ต้องการการลอบเร้นและแนบเนียน และต้องเข้าไปในที่ที่ใครก็ไม่อยากเข้าไป ให้คิดง่าย ๆ ก็เหมือนสายลับที่โหนสลิงลงมาจากเพดาน เหมาะสำหรับคนที่ต้องการเล่นแบบลอบเร้นและชอบรับบทเหมือนโจร ซ่อนตัว หรือลอบฆ่า"
+        ],
+        "stat" : "DEX เสริมด้วย WIS และ INT",
+        "savingthrow" : ["DEX", "CHA"],
+        "sk_choose" : 4,
+        "skills" : [
+            "Acrobatics",
+            "Athletics",
+            "Deception",
+            "Infiltration",
+            "Infotech",
+            "Perception",
+            "Persuasion",
+            "Sleight of Hand",
+            "Stealth",
+            "Tactics"
+        ],
+        "armor" : "Light and Medium Armor",
+        "range" : "Simple Ranged Weapons, Explosives",
+        "malee" : "Simple Malee Weapons",
+        "t_given" : [],
+        "t_choose" : 1,
+        "tools" : [
+            "Forgery Kit",
+            "Hacking Tools",
+            "Thieves Tools"
+        ],
+        "vh_given" : [],
+        "vh_choose" : 2,
+        "vehicle" : [
+            "Cars",
+            "Helicopters",
+            "Motorcycles",
+            "Planes",
+            "Unmanned"
+        ],
+        "begin" : [
+            ["(a)<br>baton", "(b)<br>garrote string"],
+            ["(a)<br>taser", "(b)<br>compound bow and quiver of 20 arrows"],
+            ["(a)<br>infiltration pack<br>(แพ็คแทรกซึม)", "(b)<br>wet work pack<br>(แพ็คลอบสังหาร)", "(c )<br> undercover pack<br>(แพ็คสายลับ)"],
+            ["(a)<br>leather armor, two knives, and thieves tools"]
+        ],
+        "itempic" : [
+            ["SS-img/ss-item/10-baton.png", "SS-img/ss-item/11-garrote-string.png"],
+            ["SS-img/ss-item/27-taser.png", "SS-img/ss-item/23-compound-bow.png"],
+            ["SS-img/ss-item/69-pack.png", "SS-img/ss-item/69-pack.png", "SS-img/ss-item/69-pack.png"],
+            [["SS-img/ss-item/02-leather-armor.png", "SS-img/ss-item/13-knife.png", "SS-img/ss-item/66-thieves-tools.png"]]
+        ],
+        "cando" : [
+            "ส่วนใหญ่แล้วคือการแฝงตัวกับมุมมืดเข้าไปในพื้นที่หวงห้าม เป็นอาชีพที่มีโอกาสได้เข้าพื้นที่ที่ลึกที่สุดของภารกิจอยู่บ่อย ๆ ทว่าก็จำเป็นที่จะต้องได้รับความช่วยเหลือจากคนอื่น โดยหน้าที่สำคัญของนักแทรกซึมจะมีอยู่สามอย่างใหญ่ ๆ ได้แก่",
+            [
+                "การลอบสังหาร",
+                "การจารกรรม",
+                "การแทรกซึม"
+            ],
+            "โดยการแทรกซึมนั้นจะรวมไปถึงการลอบเข้าไปช่วยเปิดทางจากด้านใน และอาจต้องใช้สกิลการแฮ็กเพื่อร่วมมือกับแฮ็กเกอร์ในทีมด้วย (นึกภาพห้อยตัวลงมาแบบ Mission Impossible)"
+        ]
+    },
+
+    {
+        "id" : 4,
+        "name" : "The Martial Artist",
+        "image" : "/SS-img/the-martial-artist.png",
+        "description" : [
+            "ร่างกายของผู้เชี่ยวชาญศิลปะการป้องกันตัวถูกสร้างขึ้นมาเพื่อความแข็งแรง เพราะว่าต้องฝึกทั้งร่างกายและจิตใจ Martial Artist จึงได้มีภูมิต้านทานด้านจิตใจ แถมยังมีความสามารถในการปลดอาวุธของศัตรูอีก ทว่าความสามารถของอาชีพนี้นั้น จะขึ้นอยู่กับสิ่งที่เขาได้ร่ำเรียนมา",
+            "อาชีพนี้คือผู้เชี่ยวชาญด้านการต่อสู้ระยะประชิด คู่ต่อสู้อาจถึงตายได้หากต่อสู้กันตัวต่อตัว เหมาะสำหรับคนที่ชอบการเข้าทำอย่างรวดเร็วว่องไวแบบ CQB (Close Quarters Combat)"
+        ],
+        "stat" : "STR เสริมด้วย DEX และ WIS",
+        "savingthrow" : ["STR", "DEX"],
+        "sk_choose" : 2,
+        "skills" : [
+            "Acrobatics",
+            "Athletics",
+            "Infiltration",
+            "Insight",
+            "Stealth"
+        ],
+        "armor" : "Light Armor",
+        "range" : "Simple Ranged Weapons",
+        "malee" : "Simple and Traditional Malee Weapons",
+        "t_given" : [],
+        "t_choose" : 1,
+        "tools" : [
+            "Disguise Kit",
+            "Forgery Kit",
+            "Hacking Tools",
+            "Thieves Tools"
+        ],
+        "vh_given" : [],
+        "vh_choose" : 1,
+        "vehicle" : [
+            "Cars",
+            "Motorcycles"
+        ],
+        "begin" : [
+            [
+                {
+                    "chhead" : "(a) traditional melee weapon<br><span>(เลือก 1 อย่าง)</span>",
+                    "chlist" : [
+                        "Nunchaku (กระบองสองท่อน)",
+                        "Sai (ไซ)",
+                        "Spear (หอก)",
+                        "Staff (คทา)",
+                        "Sword (ดาบ)",
+                        "Whip (แส้)"
+                    ]
+                },
+                {
+                    "chhead" : "(b) traditional ranged weapon<br><span>(เลือก 1 อย่าง)</span>",
+                    "chlist" : [
+                        "Shuriken (ชูริเคน)"
+                    ]
+                    
+                }
+            ],
+            ["(a)<br>infiltrators pack<br>(แพ็คแทรกซึม)", "(b)<br>wilderness pack<br>(แพ็คเอาตัวรอด)"]
+        ],
+        "itempic" : [
+            ["",""],
+            ["SS-img/ss-item/69-pack.png", "SS-img/ss-item/65-wilderness-pack.png"]
+        ],
+        "cando" : [
+            "แม้ว่าในเรื่องของหน้าที่เด่น ๆ อาชีพนี้นั้นจะไม่มี แต่ The Martial Artist ก็มีจุดเด่นที่มองข้ามไปไม่ได้อยู่ นั่นก็คือการต่อสู้แบบไร้อาวุธที่ไม่ว่าอาชีพไหนก็ไม่สามารถสู้ได้ อาชีพนี้จะได้เปรียบมากหากทั้งทีมต้องอยู่ในสถานการณ์ที่ไร้อาวุธติดตัว"
+        ]
+    },
+
+    {
+        "id" : 5,
+        "name" : "The Medic",
+        "image" : "/SS-img/the-medic.png",
+        "description" : [
+            "หน่วยแพทย์นั้นครอบคลุมถึงทุกอาชีพที่เกี่ยวข้อง ตั้งแต่แพทย์สนามไปจนถึงนักชีวเคมี อาชีพนี้นั้นเชี่ยวชาญในสาขาที่ตัวเองถนัดเป็นอย่างดี ทำให้สามารถใจเย็นได้ในยามที่จำเป็น อาชีพนี้มีความจำเป็นอย่างมากที่ต้องได้รับการปกป้อง เพราะความอันตรายของงานที่ทำ บางครั้งอาชีพนี้อาจไม่มีอาวุธติดตัวเลยก็ได้นอกจากความต้องการที่ให้ทีมอยู่รอดปลอดภัย",
+            "ทีมแพทย์ทุกคนไม่ว่าจะมีพื้นเพมาจากไหนต่างก็มีความรู้อย่างอัดแน่น ไม่ว่าจะเป็นเรื่องร่างกายมนุษย์ และวิธีการทำให้สุขภาพของทุกคนดีที่สุด แต่ไม่เป็นห่วงตัวเอง มีบางส่วนที่ถือคำสัตย์ของฮิปโปเครติสอย่างหนักแน่น แต่บางส่วนก็ไม่สนใจ (ง่าย ๆ คือมีจรรยาบรรณกับไม่มีนั่นแหละ) อาชีพนี้สำคัญมากหากได้ไปในภารกิจบู๊",
+            "แต่ถึงอย่างนั้นก็ยังบู๊ได้ในยามคับขันตามพื้นเพที่เลือก โดยแพทย์ต่าง ๆ จะใช้ความรู้เรื่องอนาโตมีในการจัดการศัตรู ส่วนนักชีวเคมีนั้นเหมือนกับผู้พิทักษ์และคนก่อความวุ่นวายในเวลาเดียวกัน เพราะเขาสามารถสร้างไวรัส พิษ หรือยาได้ แพทย์สนามที่อยู่ในสงครามนั้นจะมีความคล่องตัวในการหลบหลีกและมีกำลังมากกว่า แม้จะด้อยความรู้กว่าคนอื่น ๆ ก็ตาม",
+            "ในหน้าที่ของอาชีพนี้นั้นค่อนข้างที่จะเป็นหัวใจหลักของทีมเลย เพราะมีความสามารถที่จะวิเคราะห์พื้นที่ ศัตรู หรือสิ่งที่เกี่ยวข้องกับสารเคมีและร่างกายมนุษย์ได้"
+        ],
+        "stat" : "WIS เสริมด้วย INT และ CHA",
+        "savingthrow" : ["INT", "WIS"],
+        "sk_choose" : 3,
+        "skills" : [
+            "Athletics",
+            "Infiltration",
+            "Infotech",
+            "Medicine",
+            "Persuasion",
+            "Survival"
+        ],
+        "armor" : "Light and Medium Armor",
+        "range" : "Simple Ranged Weapons",
+        "malee" : "Simple Malee Weapons",
+        "t_given" : ["First Aid Kit"],
+        "t_choose" : 1,
+        "tools" : [
+            "Forensic Kit",
+            "Surgeon Tools"
+        ],
+        "vh_given" : ["Cars"],
+        "vh_choose" : 0,
+        "vehicle" : [],
+        "begin" : [
+            ["(a)<br>submachine gun", "(b)<br>light pistol and knife"],
+            ["(a)<br>undercover vest", "(b)<br>stab vest"],
+            ["(a)<br>investigation pack<br>(แพ็คสืบสวน)", "(b)<br>medical pack<br>(แพ็คการแพทย์)", "(c )<br>forensic tools<br>(เครื่องมือเก็บพิสูจน์หลักฐาน)"],
+            ["(a)<br>first aid kit"]
+        ],
+        "itempic" : [
+            ["SS-img/ss-item/28-submachine-gun.png", ["SS-img/ss-item/26-pistol.png", "SS-img/ss-item/13-knife.png"]],
+            ["SS-img/ss-item/03-undercover-vest.png", "SS-img/ss-item/04-stab-vest.png"],
+            ["SS-img/ss-item/67-investigation-pack.png", "SS-img/ss-item/62-medical-pack.png", "SS-img/ss-item/69-pack.png"],
+            ["SS-img/ss-item/60-first-aid-kit.png"]
+        ],
+        "cando" : [
+            "รักษา และประคองอาการของคนป่วยหรือบาดเจ็บ ล้างค่าสถานะที่ไม่ดีออกได้",
+            "หากเป็นนักชีวเคมีมาก่อนสามารถสร้างพิษและยาแก้พิษของตัวเองใช้ได้",
+            "วิเคราะห์อาการบาดเจ็บ สาเหตุการตาย หรือชันสูตรได้หากมีเครื่องมือ",
+            "วิเคราะห์ยา สารเคมี ไวรัสต่าง ๆ",
+            "บู๊"
+        ]
+    },
+
+    {
+        "id" : 6,
+        "name" : "The Ranger",
+        "image" : "/SS-img/the-ranger.png",
+        "description" : [
+            "เรนเจอร์เป็นอาชีพที่มีความเชี่ยวชาญด้านการเอาชีวิตรอดและถึกทนมากที่สุด พวกเขาสามารถทำตัวกลมกลืนไปกับสิ่งแวดล้อมได้โดยสัญชาตญาณ สามารถใช้แนวป้องกันตามธรรมชาติหรือสิ่งแวดล้อมอื่น ๆ ในการโจมตีแบบยิงแล้วหนีได้ ทำให้ทีมสามารถดักซุ่มโจมตีศัตรูในจุดที่คาดไม่ถึงได้ เพราะเป็นนักสำรวจป่ามือฉมังที่ช่ำชองในสภาพอากาศที่คุ้นเคย",
+            "อาชีพนี้ถือเป็นผู้เชี่ยวชาญด้านการเดินป่าสามารถนำทางคนอื่น ๆ ได้อย่างถูกต้อง เป็นพวกที่พึ่งพาเทคโนโลยีน้อยกว่าคนอื่น ๆ และหากใช้ก็คงเป็นรถขับทางวิบาก ไม่ก็เฮลิคอปเตอร์มากกว่า อาชัพนี้มีค่ามากหาต้องทำภารกิจในป่าหรือต้องตามหาบางอย่างในที่ที่กว้างใหญ่ไพศาล"
+        ],
+        "stat" : "CON และ WIS เสริมด้วย INT",
+        "savingthrow" : ["DEX", "CON"],
+        "sk_choose" : 3,
+        "skills" : [
+            "Acrobatics",
+            "Athletics",
+            "Infiltration",
+            "Medicine",
+            "Perception",
+            "Stealth",
+            "Survival",
+            "Tactics"
+        ],
+        "armor" : "Light and Medium Armor",
+        "range" : "Simple and Military Ranged Weapons",
+        "malee" : "Simple and Traditional Malee Weapons",
+        "t_given" : ["Climbing Kit"],
+        "t_choose" : 0,
+        "tools" : [],
+        "vh_given" : ["Cars", "Motorcycles", "Heavy Vehicle"],
+        "vh_choose" : 0,
+        "vehicle" : [],
+        "begin" : [
+            ["(a)<br>machete", "(b)<br>spear", "(c )<br>handaxe"],
+            ["(a)<br>heavy pistol", "(b)<br>compound bow"],
+            ["(a)<br>padded leather clothing", "(b)<br>stab vest"],
+            ["(a)<br>wilderness pack and knife"]
+        ],
+        "itempic" : [
+            ["SS-img/ss-item/14-machete.png", "SS-img/ss-item/18-spear.png", "SS-img/ss-item/12-handaxe.png"],
+            ["SS-img/ss-item/26-pistol.png", "SS-img/ss-item/23-compound-bow.png"],
+            ["SS-img/ss-item/01-leather-clothing.png", "SS-img/ss-item/04-stab-vest.png"],
+            [["SS-img/ss-item/65-wilderness-pack.png", "SS-img/ss-item/13-knife.png"]]
+        ],
+        "cando" : [
+            "วิเคราะห์เส้นทางเดินป่า หรือพื้นที่รกร้างได้ ทำให้สามารถรับหน้าที่เป็นผู้นำทางได้",
+            "สร้างกับดักไว้ดักสัตว์ หรือศัครูได้",
+            "สามารถหาอาหารได้มากกว่าคนอื่น",
+            "ทนต่อพิษต่าง ๆ ได้ รวมถึงมีความรู้เรื่องสัตว์ป่าและพันธุ์พืช",
+            "ปีนเขาหรือทำกิจกรรมในน้ำได้ดีกว่าคนอื่น"
+        ]
+    },
+
+    {
+        "id" : 7,
+        "name" : "The Soldier",
+        "image" : "/SS-img/the-soldier.png",
+        "description" : [
+            "พลทหารคืออาชีพที่มีความยืดหยุ่นสูงที่สุด การฝึกของอาชีพนี้นั้นครอบคลุมไปถึงความรู้ในทุกด้านการรบและสงคราม ตั้งแต่การซุ่มยิงระยะไกล พลปืน หรือการต่อสู้ระยะประชิดที่เน้นการสังหาร การชกต่อย เปรียบเสมือนกล้ามเนื้อของทีมที่อึด ถึก และวางใจได้",
+            "อาชีพนี้นั้นเป็นตัวเลือกในการเริ่มเล่นที่ดี เพราะว่าสามารถเล่นได้โดยไม่ต้องคิดอะไรมาก เป็นตัวตีที่ทนน้ำทนฝน แม้ว่าจะไม่ได้ลอบเร้นหรือเจรจากับ NPC ได้เก่งเท่าอาชีพเฉพาะก็ตาม แต่ก็พอแทนในส่วนที่ขาดได้ดีในระดับหนึ่งแล้วแต่ที่เราจะสร้าง"
+        ],
+        "stat" : "STR (ถ้าอยากเน้นที่การเป็นทีมจู่โจม) / DEX (ถ้าอยากเป็นนักแม่นปืน) / CON (ถ้าอยากแทงค์) / หรืออื่น ๆ เพื่อเติมเต็มในตำแหน่งที่ขาดหาย",
+        "savingthrow" : ["STR", "CON"],
+        "sk_choose" : 3,
+        "skills" : [
+            "Acrobatics",
+            "Athletics",
+            "Insight",
+            "Intimidation",
+            "Perception",
+            "Survival",
+            "Tactics"
+        ],
+        "armor" : "All Armor",
+        "range" : "Simple, Military and Heavy Ranged Weapons, Grenades",
+        "malee" : "Simple Malee Weapons",
+        "t_given" : ["First Aid Kit", "Gun Cleaning Kit"],
+        "t_choose" : 0,
+        "tools" : [],
+        "vh_given" : [],
+        "vh_choose" : 2,
+        "vehicle" : [
+            "Cars",
+            "Motorcycles",
+            "Heavy Vehicle",
+            "Unmanned"
+        ],
+        "begin" : [
+            ["(a)<br>tactical armor", "(b)<br>stab vest and taser"],
+            ["(a)<br>machine pistol and shield", "(b)<br>carbine rifle", "(c )<br>marksman rifle"],
+            [
+                "(a)<br>light pistol",
+                {
+                    "chhead" : "(b) any simple melee weapon<br><span>(เลือก 1 อย่าง)</span>",
+                    "chlist" : [
+                        "Baton (กระบอง)",
+                        "Garrote String (ลวดรัดคอ)",
+                        "Hand Axe (ขวาน)",
+                        "Knife (มีด)",
+                        "Machete (มีดมาเชเต้)",
+                        "Sledgehammer (ค้อนปอนด์)"
+                    ]
+                }
+            ],
+            ["(a)<br>wet work pack<br>(แพ็คลอบสังหาร)", "(b)<br>wilderness pack<br>(แพ็คเอาตัวรอด)"]
+        ],
+        "itempic" : [
+            [
+                "SS-img/ss-item/05-tactical-armor.png", 
+                ["SS-img/ss-item/04-stab-vest.png", "SS-img/ss-item/27-taser.png"]
+            ],
+            [
+                ["SS-img/ss-item/26-pistol.png", "SS-img/ss-item/08-riot-shield.png"], 
+                "SS-img/ss-item/61-carbine-rifle.png", 
+                "SS-img/ss-item/30-marksman-rifle.png"],
+            ["SS-img/ss-item/26-pistol.png", ""],
+            ["SS-img/ss-item/69-pack.png", "SS-img/ss-item/65-wilderness-pack.png"]
+        ],
+        "cando" : [
+            "อาชีพนี้ไม่ได้มีหน้าที่เฉพาะเช่นเดียวกับ The Martial Artist แต่ถึงอย่างนั้น The Soldier ก็มีทักษะการยิงปืนเหนือใคร มีความรู้ในการใช้อาวุธของกองทัพได้ หากต้องการบุกตะลุยซึ่ง ๆ หน้าหรือไม่ต้องการคิดมาก อาชีพนี้จะเหมาะกับคุณ"
+        ]
+    },
+
+    {
+        "id" : 8,
+        "name" : "The Technician",
+        "image" : "/SS-img/the-technician.png",
+        "description" : [
+            "ช่างเทคนิคนั้นเปรียบเหมือนกับคนงานที่สร้างปาฏิหาริย์ เป็นคนที่สามารถนำไมโครโฟนหรือเครื่องดักฟังยัดใส่เข้าไปในข้าวของเครื่องใช้ธรรมดา สร้างโดรนที่ยิงปืน หรือกระทั่งแยกชิ้นส่วนเทคโนโลยีทางทหารที่ไม่สามารถทำลายได้ได้ แม้จะมีความเข้าใจในการเขียนโปรแกรมแต่ก็ต่างจากแฮ็กเกอร์ตรงที่ต่อไฟรถถัง และทำกระป๋องที่สนิมกินให้เป็นรถสุดแรงได้ ถ้ามีระบบควบคุมทางไกลหรือวิศวกรรมเข้ามาเกี่ยวข้องแล้ว ช่างเทคนิคคือตัวเลือกที่ดีที่สุด",
+            "ช่างเทคนิคนั้นกระตือรือร้นกับการทำความเข้าใจสิ่งต่าง ๆ ที่เป็นเครื่องจักรและไฟฟ้าว่าทำงานอย่างไรด้วยการแยกส่วนและประกอบมันกลับเข้าไปเช่นเดิมเสมอ แน่นอนว่าบ่อยครั้งที่เขาแอบเพิ่มบางอย่างใหม่ ๆ เข้าไปด้วยตอนประกอบ ทำให้อาชีพนี้สามารถเพิ่ม ลด หรือซ่อมแซมสิ่งของหลายอย่างได้"
+        ],
+        "stat" : "DEX และ INT",
+        "savingthrow" : ["DEX", "INT"],
+        "sk_choose" : 4,
+        "skills" : [
+            "Acrobatics",
+            "Athletics",
+            "Espionage",
+            "Infiltration",
+            "Infotech",
+            "Mechanics",
+            "Medicine",
+            "Sleight of Hand"
+        ],
+        "armor" : "All Armor",
+        "range" : "Simple, Military and Heavy Ranged Weapons, Explosives",
+        "malee" : "Simple Malee Weapons",
+        "t_given" : [],
+        "t_choose" : 2,
+        "tools" : [
+            "Electrician Tools",
+            "Mechanic Tools",
+            "Hacking Tools",
+            "Thieves Tools"
+        ],
+        "vh_given" : [],
+        "vh_choose" : 4,
+        "vehicle" : [
+            "Cars",
+            "Heavy Vehicle",
+            "Helicopters",
+            "Motorbikes",
+            "Planes",
+            "Ships",
+            "Tanks",
+            "Unmanned"
+        ],
+        "begin" : [
+            ["(a)<br>heavy pistol", "(b)<br>taser", "(c )<br>submachine gun"],
+            [
+                {
+                    "chhead" : "(a) any simple melee weapon<br><span>(เลือก 1 อย่าง)</span>",
+                    "chlist" : [
+                        "Baton (กระบอง)",
+                        "Garrote String (ลวดรัดคอ)",
+                        "Hand Axe (ขวาน)",
+                        "Knife (มีด)",
+                        "Machete (มีดมาเชเต้)",
+                        "Sledgehammer (ค้อนปอนด์)"
+                    ]
+                }
+            ],
+            ["(a)<br>electrician tools", "(b)<br>mechanic tools", "(c )<br>tablet", "(d)<br>thieves tools"],
+            ["(a)<br>infiltration pack<br>(แพ็คแทรกซึม)", "(b)<br>wet work pack<br>(แพ็คลอบสังหาร)"]
+        ],
+        "itempic" : [
+            ["SS-img/ss-item/26-pistol.png", "SS-img/ss-item/27-taser.png", "SS-img/ss-item/28-submachine-gun.png"],
+            [""],
+            ["SS-img/ss-item/63-electrician-tools.png", "SS-img/ss-item/64-mechanic-tools.png", "SS-img/ss-item/59-tablet.png", "SS-img/ss-item/66-thieves-tools.png"],
+            ["SS-img/ss-item/69-pack.png", "SS-img/ss-item/69-pack.png"]
+        ],
+        "cando" : [
+            "ส่วนมากแล้วอาชีพนี้จะเป็นอาชีพที่อยู่ทำงานที่สำนักงานใหญ่มากที่สุดเพราะเป็นสายสร้าง แต่หากจะออกไปปฏิบัติงานก็สามารถที่จะทำได้เช่นกัน โดยจะแบ่งหน้าที่ออกเป็น 2 ส่วนดังนี้",
+            {
+                "sub" : "งานในเวิร์คช็อป",
+                "desc" : [
+                    "เพิ่ม Gadget Slots ให้ทีมสามารถพก Gadget ไปปฏิบัติภารกิจได้มากขึ้น",
+                    "สร้างระเบิด สร้างเครื่องมือต่าง ๆ ที่ช่วยอำนวยความสะดวกให้แก่อาชีพอื่น ๆ ได้",
+                    "ซ่อมแซมเครื่องมือต่าง ๆ หลังการใช้งาน",
+                    "วิเคราะห์ระเบิด ชิ้นส่วน หรือเครื่องจักร เครื่องกลต่าง ๆ ได้"
+                ]
+            },
+            {
+                "sub" : "งานภาคสนาม",
+                "desc" : [
+                    "กู้และติดตั้งระเบิด",
+                    "ขับขี่ยานพาหนะทุกชนิด",
+                    "ซ่อมแซมสิ่งของหรือยานพาหนะชั่วคราว",
+                    "ตรวจสอบวิเคราะห์หรือแยกชิ้นส่วนเครื่องจักรกล"
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Secret Service | Status & Skills</title>
+    <link rel="icon" type="image/x-icon" href="/SS-img/ss-icon.ico">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <!--Nav Bar-->
+    <nav class="navbar navbar-expand-sm orbitron p-3 fixed-top" data-bs-theme="dark">
+        <div class="container-fluid">
+            <button class="navbar-toggler border-0 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <a class="navbar-brand d-sm-none me-0" href="1-index.html"><img src="SS-img/ss-logo.png" alt=""></a>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto justify-content-evenly align-items-center">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="1-index.html">Home</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="2-rule.html">Rules</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="3-howto.html">How To</a>
+                    </li>
+                    <a class="navbar-brand mx-4 d-none d-sm-block" href="1-index.html"><img src="SS-img/ss-logo.png" alt=""></a>
+                    <li class="nav-item dropdown mx-2 text-center">
+                        <a class="nav-link dropdown-toggle active" aria-current="page" href="" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Info
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="4-info-status.html">Status & Skills</a></li>
+                            <li><a class="dropdown-item" href="5-info-class.html">Class</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="6-quests.html">Quests</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="7-agents.html">Agents</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--Status-->
+    <section id="stat" class="d-flex flex-column justify-content-center align-items-center px-3">
+        <div class="container-sm g-0 mt-4">
+            <h1 class="orbitron text-center mb-3">Status & Skills</h1>
+            <hr>
+            <div class="ssneon p-3">
+                <p>ค่าสถานะและทักษะนั้นเป็นสิ่งสำคัญที่สุดอันดับหนึ่งของกิจกรรมนี้ สิ่งที่คุณทำได้หรือทำไม่ได้จะถูกกำหนดด้วยสิ่งนี้ รวมไปถึงดวงของคุณด้วย เพื่อให้คุณเข้าใจอย่างละเอียดมากขึ้นถึงความสัมพันธ์ระหว่างค่าสถานะและทักษะติดตัว เราจึงอยากให้คุณอ่านข้อมูลต่อไปนี้ให้ละเอียด</p>
+            </div>
+            <br>
+            <h2 class="orbitron">Status : </h2>
+            <div class="ssneon p-3">
+                <p>ขอบเขตความสามารถของคุณที่จะส่งผลถึงทักษะติดตัว มี 6 สถานะ ได้แก่ <b>STR</b> (กำลังกาย), <b>DEX</b> (ความแม่นยำ), <b>CON</b> (ความอึด), <b>INT</b> (สติปัญญา), <b>WIS</b> (การสังเกต), <b>CHA</b> (บุคลิกภาพ) โดยค่าสถานะทั้ง 6 สถานะนี้จะได้มาจาก <b><span>การทอยลูกเต๋า</span></b> รวมกับค่าสถานะพิเศษจากอาชีพของคุณเอง
+                </p>
+                <p>ค่าสถานะที่ได้จะเป็นตัวกำหนด <b><span>Modifier</span></b> ให้กับคุณตามตารางด้านล่างนี้</p>
+                <div class="scrollable mb-3">
+                    <table id="status" class="table table-bordered mx-auto">
+                        <tbody>
+                            <tr>
+                                <th colspan="2">แต้มที่ทอยได้</th>
+                                <td>3</td>
+                                <td>4-5</td>
+                                <td>6-7</td>
+                                <td>8-9</td>
+                                <td>10-11</td>
+                                <td>12-13</td>
+                                <td>14-15</td>
+                                <td>16-17</td>
+                                <td>18</td>
+                            </tr>
+                            <tr>
+                                <th colspan="2">Modifier</th>
+                                <td>-4</td>
+                                <td>-3</td>
+                                <td>-2</td>
+                                <td>-1</td>
+                                <td>0</td>
+                                <td>+1</td>
+                                <td>+2</td>
+                                <td>+3</td>
+                                <td>+4</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h3>คำอธิบายค่าสถานะต่าง ๆ</h3>
+                <hr class="my-3">
+                <ol>
+                    <li><b><span>Strenght (STR)</span></b> ค่าสถานะที่เกี่ยวของกับพละกำลัง เช่น การกระโดดข้ามสิ่งกีดขวาง การทำลายสิ่งกีดขวาง การต่อสู้แบบประชิด</li>
+                    <li><b><span>Dexterity (DEX)</span></b> ค่าสถานะที่เกี่ยวข้องกับความว่องไว ความยืดหยุ่นของร่างกาย และความแม่นยำ เช่น การหลบการโจมตี การยิงปืน การขว้างระเบิด</li>
+                    <li><b><span>Constitution (CON)</span></b> ค่าสถานะที่เกี่ยวข้องกับความอึด ความทนทาน เช่น ได้รับบาดเจ็บน้อยกว่าปกติ หรือสามารถอยู่ในสภาวะขาดอากาศได้นาน</li>
+                    <li><b><span>Intelligence (INT)</span></b> ค่าสถานะที่เกี่ยวข้องกับสติปัญญา เช่น จดจำข้อมูลต่าง ๆ ได้ดี วิเคราะห์สถานการณ์หรือส่วนประกอบของสิ่งต่าง ๆ ได้ เข้าใจในตรรกะและเหตุผล</li>
+                    <li><b><span>Wisdom (WIS)</span></b> ค่าสถานะที่เกี่ยวข้องกับการรับรู้ ประสาทสัมผัส สัญชาตญาณและไหวพริบ เช่น มองเห็นสิ่งผิดปกติได้ไวกว่าคนอื่น ๆ</li>
+                    <li><b><span>Charisma (CHA)</span></b> ค่าสถานะที่เกี่ยวข้องกับบุคลิกภาพและเสน่ห์ มีผลกับการเจรจากับเป้าหมาย ทั้งในการเกลี้ยกล่อมและหลอกลวง</li>
+                </ol>
+            </div>
+            <br>
+            <h2 class="orbitron">Skills : </h2>
+            <div class="ssneon p-3">
+                <div class="scrollable mb-3">
+                    <table id="skill" class="table table-bordered mx-auto">
+                        <thead>
+                            <tr>
+                                <th>Status</th>
+                                <th>Skills</th>
+                                <th>Details</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="bdsolid">
+                                <th>STR</th>
+                                <td>Athletics</td>
+                                <td>การใช้กำลัง</td>
+                            </tr>
+                            <tr>
+                                <th rowspan="3">DEX</th>
+                                <td>Acrobatics</td>
+                                <td>ทักษะกายกรรม ความยืดหยุ่น</td>
+                            </tr>
+                            <tr>
+                                <td>Sleight of Hand</td>
+                                <td>ทักษะมือไว มือเหนียว</td>
+                            </tr>
+                            <tr class="bdsolid">
+                                <td>Stealth</td>
+                                <td>การลอบเร้น ย่องเบา</td>
+                            </tr>
+                            <tr class="bdsolid">
+                                <th>CON</th>
+                                <td>-</td>
+                                <td>มีผลกับค่าเลือดและการเลือกสวมเกราะเท่านั้น</td>
+                            </tr>
+                            <tr>
+                                <th rowspan="4">INT</th>
+                                <td>Espionage</td>
+                                <td>การสอดแนม</td>
+                            </tr>
+                            <tr>
+                                <td>Infotech</td>
+                                <td>ความรู้ด้านเทคโนโลยี</td>
+                            </tr>
+                            <tr>
+                                <td>Mechanics</td>
+                                <td>ความรู้ด้านวิศวกรรม</td>
+                            </tr>
+                            <tr class="bdsolid">
+                                <td>Tactics</td>
+                                <td>ความรู้ด้านยุทธวิธี</td>
+                            </tr>
+                            <tr>
+                                <th rowspan="5">WIS</th>
+                                <td>Infiltration</td>
+                                <td>การแทรกซึม พรางตัว</td>
+                            </tr>
+                            <tr>
+                                <td>Insight</td>
+                                <td>ความสามารถในการอ่านใจ มองทุกอย่างทะลุปรุโปร่ง</td>
+                            </tr>
+                            <tr>
+                                <td>Medicine</td>
+                                <td>ความรู้ด้านการแพทย์ การรักษาแผลเบื้องต้น</td>
+                            </tr>
+                            <tr>
+                                <td>Perception</td>
+                                <td>การรับรู้ ประสาทสัมผัส</td>
+                            </tr>
+                            <tr class="bdsolid">
+                                <td>Survival</td>
+                                <td>ทักษะการเอาตัวรอด</td>
+                            </tr>
+                            <tr>
+                                <th rowspan="3">CHA</th>
+                                <td>Deception</td>
+                                <td>การหลอกลวง โกหก ให้ข้อมูลเท็จ</td>
+                            </tr>
+                            <tr>
+                                <td>Intimidation</td>
+                                <td>การข่มขู่ ทำให้เป้าหมายหวาดกลัว</td>
+                            </tr>
+                            <tr class="bdsolid">
+                                <td>Persuasion</td>
+                                <td>การโน้มน้าว ใช้คำพูดหว่านล้อมให้เป้าหมายคล้อยตาม</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Foot-->
+    <footer id="ssfooter" class="mt-4 py-4">
+        <div class="ssfoot d-flex flex-column justify-content-center align-items-center text-white-50">
+            our discord
+            <a class="nav-link" href="https://discord.gg/s3Zar5uqrF"><i class="fa-brands fa-discord mt-2"></i></a>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+</body>
+</html>

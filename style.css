@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Noto+Sans+Thai:wght@100..900&family=Orbitron:wght@400..900&family=Libre+Barcode+39&display=swap');
+
+:root {
+    --blue: #3db4c1;
+    --blue-light: #9ed9e0;
+    --blue-dark: #111f20;
+    --blue-rgb: rgba(0,133,150,1);
+    --blue-rgb1: rgba(0,133,150,0.1);
+    --blue-rgb2: rgba(0,133,150,0.2);
+    --blue-rgb5: linear-gradient(rgba(0,133,150,0.5) 0 0);
+}
+
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    --bs-body-bg: #131313;
+    --bs-body-color: #fff;
+    --bs-body-font-family: 'Inter', 'Noto Sans Thai';
+    --bs-body-line-height: 1.8;
+}
+
+.orbitron { 
+    font-family: 'Orbitron', 'Noto Sans Thai';
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.ssneon {
+    background-color: var(--blue-rgb1);
+    border: 1px solid var(--blue);
+    border-radius: 3px;
+    box-shadow: 0 0 5px var(--blue), 0 0 5px var(--blue) inset;
+    background-blend-mode: overlay;
+}
+
+.navbar { 
+    background: var(--blue-dark);
+    top: 0;
+    left: 0;
+}
+
+.navbar-brand img { height: 2rem;}
+.navbar-nav .nav-link { color: #fff; }
+
+.navbar-nav .nav-link.active {
+    color: var(--blue-light) !important;
+    text-shadow: 0 0 1rem var(--blue);
+}
+
+.navbar-nav .nav-link:hover, #ssfooter .nav-link:hover { 
+    color: #fff;
+    text-shadow: 0 0 1rem var(--blue);
+}
+
+button.navbar-toggler {
+    color: #fff;
+}
+
+button.navbar-toggler:focus {
+    --bs-navbar-toggler-focus-width: 0;
+    text-shadow: 0 0 1rem var(--blue);
+}
+
+.dropdown-menu.show {
+    background-color: var(--blue-dark);
+    border: 0;
+    text-transform: capitalize;
+    letter-spacing: 0.125rem;
+}
+
+.dropdown-menu.show .dropdown-item:hover {
+    background-color: transparent;
+    text-shadow: 0 0 1rem var(--blue);
+}
+
+section { margin-top: 5rem; }
+
+#home button, #howto button, #classdt button, .btnAccept, .btnCancle {
+    width: fit-content;
+    color: #fff;
+    font: bold 1rem/1 'Orbitron';
+    text-transform: uppercase;
+    background-color: var(--blue-rgb1);
+    border: 1px solid var(--blue);
+    border-radius: 3px;
+    background-blend-mode: overlay;
+    padding: 0.5rem 1rem;
+    transition: 0.3s ease;
+}
+
+#home button:hover, #howto button:hover, #classdt button:hover, .btnAccept:hover, .btnCancle:hover {
+    background-color: var(--blue-rgb2);
+    box-shadow: 0 0 5px var(--blue), 0 0 5px var(--blue) inset;
+}
+
+#classdt button:disabled { opacity: 0; }
+
+#home .ssbg { background: linear-gradient(rgba(19,19,19,0.75) 0 0), url(/SS-img/ss-bg.jpg) center/cover no-repeat; }
+#home .ssneon { height: 60vh; }
+#home h1 { font-size: 2.5rem; text-align: center; }
+
+#ssfooter { background-color: var(--blue-dark); }
+#ssfooter i { font-size: 2rem; }
+
+#rule p, #classDesc p, #classCando p { text-indent: 50px; text-align: justify; }
+p { text-align: justify; }
+p:first-child, #howto h3:first-child { margin-top: 1rem; }
+span { color: var(--blue-light); }
+b span { color: var(--blue); }
+
+body hr { border-color: var(--blue-light); opacity: 0.8; margin: 2rem auto;}
+body h3 {color: var(--blue-light);}
+#howto a {
+    color: var(--blue);
+    padding-left: 0.5rem;
+}
+
+.scrollable {
+    width: 100%;
+    overflow: auto;
+}
+
+.scrollable::-webkit-scrollbar {
+    height: 0.5rem;
+    background-color: #131313;
+}
+
+.scrollable::-webkit-scrollbar-thumb {
+    background-color: var(--blue);
+}
+
+table.table {
+    --bs-table-bg: var(--blue-dark);
+    --bs-table-color: #fff;
+    --bs-table-border-color: var(--blue-light);
+    text-align: center;
+    table-layout: fixed;
+    vertical-align: middle;
+}
+
+#status.table { width: 800px; }
+
+#status.table th, .table thead th {
+    --bs-table-bg: var(--blue-rgb2);
+    --bs-table-color: var(--blue-light);
+}
+
+.table tbody tr:nth-child(even) { --bs-table-bg: var(--blue-rgb1); }
+.table td { border-style: dashed; }
+.table td:last-child { border-right-style: solid; }
+
+#skill.table { min-width: 500px; }
+#skill.table tbody tr { border-style: dashed; }
+#skill.table td { border-left-style: solid; }
+#skill.table td:last-child { text-align: left; }
+
+.bdsolid { border-bottom-style: solid !important; }
+
+#classlist {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+a.theclass {
+    color: #fff;
+    text-decoration: none;
+    height: 150px;
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.ssclass-name { 
+    display: none;
+    text-shadow: 0 0 0.5rem #000;
+}
+
+a.theclass:hover .ssclass-name { display: block; }
+
+#theclasspic {
+    height: 300px;
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.classOption {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.classOpNum {
+    min-width: 100px;
+    text-align: center;
+    font-size: 4rem;
+    padding: 1.5rem 0;
+}
+
+.classItemflex {
+    display: flex;
+    flex-direction: column;
+}
+
+.classpicflx {
+    display: flex;
+    gap: 2rem;
+}
+
+.classItemPic {
+    width: 150px;
+    height: 200px;
+    padding: 10px;
+    background: linear-gradient(rgba(0,133,150,0.25) 0 0), var(--pic) center/contain no-repeat content-box;
+}
+
+.classItemPic span {
+    padding-left: 1.5rem;
+}
+
+.classItemCh {
+    width: 150px;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.btnFlex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.questPic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    background: var(--blue-rgb5), var(--qpic) center/cover no-repeat;
+    cursor: pointer;
+    transition: background-image 2s ease;
+}
+
+.questOverlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    opacity: 0;
+    transition: 0.5s ease;
+    font-size: 1.5rem;
+}
+
+.questPic:hover .questOverlay { opacity: 1; }
+
+.confirmBox {
+    background: rgba(19,19,19,0.75);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.messageBox {
+    width: 300px;
+    text-align: center;
+    padding: 1rem 2rem;
+    background-color: var(--blue-dark);
+}
+
+.btnBox {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.btnAccept, .btnCancle { 
+    flex: 1; }
+
+.btnAccept:hover, .btnCancle:hover { cursor: pointer; }
+
+.btnAccept:hover { 
+    background-color: rgba(19, 134, 86,0.2);
+    box-shadow: 0 0 5px #138656, 0 0 5px #138656 inset;
+    border-color: #138656;
+}
+
+.btnCancle:hover { 
+    background-color: rgba(200,81,81,0.2);
+    box-shadow: 0 0 5px #c85151, 0 0 5px #c85151 inset;
+    border-color: #c85151;
+}
+
+#agentList hr:last-child { display: none; }
+
+.proGeninfoBox {
+    width: fit-content;
+    margin: auto;
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    grid-gap: 25px;
+}
+
+@media only screen and (max-width: 576px) {
+    .proGeninfoBox { 
+        justify-content: center;
+    }
+}
+
+.proPic {
+    aspect-ratio: 3/4;
+    height: 300px;
+    background: linear-gradient(rgba(0,133,150,1) 0 0), var(--propic) center/cover no-repeat;
+}
+
+.proGeninfo {
+    font-size: 0.825rem;
+    font-weight: 600;
+    color: var(--blue-light);
+    letter-spacing: 2px;
+    line-height: 1.2;
+}
+
+.proCodeName { 
+    font-size: 2.5rem; 
+    font-weight: 900;
+    color: white;
+}
+
+.ssbar {
+    padding-top: 10px;
+    font-family: 'Libre Barcode 39';
+    font-size: 1.5rem;
+}
+
+.ssbar::before {
+    content: "secretservice";
+}
