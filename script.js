@@ -1,29 +1,34 @@
-// get data from class.json
-let classes = null;
-fetch('class.json')
-.then(response => response.json())
-.then(data => { classes = data; })
-
 // get data from agent.json
 let agents = null;
 fetch('agent.json')
 .then(response => response.json())
 .then(data => { agents = data;})
 
-// add data class to HTML
-let ClassList = document.getElementById('classlist');
+// get data from class.json
+let classes = null;
+
+function fetchClassDataAndAddList() {
+    fetch('class.json')
+    .then(response => response.json())
+    .then(data => {
+        classes = data;
+        addClassList();
+    })
+    .catch(error => console.error('Error fetching class.json:', error));
+}
 
 function addClassList() {
+    let classList = document.getElementById('classlist');
     classes.forEach(ssclass => {
         let newClasses = document.createElement('a');
         newClasses.href = '/class-detail.html?id=' + ssclass.id;
         newClasses.classList.add('theclass', 'ssneon', 'orbitron');
         newClasses.style.backgroundImage = "var(--blue-rgb5), url(" + ssclass.image + ")";
         newClasses.innerHTML = `
-        <div class="ssclass-name">${ssclass.name}</div>
+            <div class="ssclass-name">${ssclass.name}</div>
         `;
-        ClassList.appendChild(newClasses);
-    })
+        classList.appendChild(newClasses);
+    });
 }
 
 function addClassDetail() {
