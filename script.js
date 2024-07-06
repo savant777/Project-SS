@@ -329,6 +329,20 @@ function questAlert(callback, name) {
     document.body.appendChild(confirmBox);
 }
 
+// get data from agent.json
+
+let agents = null;
+
+function fetchClassDataAndAddDetail() {
+    fetch('agent.json')
+    .then(response => response.json())
+    .then(data => {
+        agents = data;
+        addAgentList();
+    })
+    .catch(error => console.error('Error fetching class.json:', error));
+}
+
 // add data agent to HTML
 function addAgentList() {
     // add picture
