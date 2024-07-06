@@ -1,9 +1,3 @@
-// get data from agent.json
-let agents = null;
-fetch('agent.json')
-.then(response => response.json())
-.then(data => { agents = data;})
-
 // get data from class.json
 let classes = null;
 
@@ -29,6 +23,18 @@ function addClassList() {
         `;
         classList.appendChild(newClasses);
     });
+}
+
+// get data from class.json
+
+function fetchClassDataAndAddDetail() {
+    fetch('class.json')
+    .then(response => response.json())
+    .then(data => {
+        classes = data;
+        addClassDetail();
+    })
+    .catch(error => console.error('Error fetching class.json:', error));
 }
 
 function addClassDetail() {
