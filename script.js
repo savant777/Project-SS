@@ -11,21 +11,21 @@ function fetchClassDataAndAddList() {
     .catch(error => console.error('Error fetching class.json:', error));
 }
 
+// add data class to HTML
+let ClassList = document.getElementById('classlist');
+
 function addClassList() {
-    let classList = document.getElementById('classlist');
     classes.forEach(ssclass => {
         let newClasses = document.createElement('a');
         newClasses.href = '/class-detail.html?id=' + ssclass.id;
         newClasses.classList.add('theclass', 'ssneon', 'orbitron');
         newClasses.style.backgroundImage = "var(--blue-rgb5), url(" + ssclass.image + ")";
         newClasses.innerHTML = `
-            <div class="ssclass-name">${ssclass.name}</div>
+        <div class="ssclass-name">${ssclass.name}</div>
         `;
-        classList.appendChild(newClasses);
-    });
+        ClassList.appendChild(newClasses);
+    })
 }
-
-// get data from class.json
 
 function fetchClassDataAndAddDetail() {
     fetch('class.json')
@@ -330,17 +330,16 @@ function questAlert(callback, name) {
 }
 
 // get data from agent.json
-
 let agents = null;
 
-function fetchClassDataAndAddDetail() {
+function fetchAgentDataAndAddList() {
     fetch('agent.json')
     .then(response => response.json())
     .then(data => {
         agents = data;
         addAgentList();
     })
-    .catch(error => console.error('Error fetching class.json:', error));
+    .catch(error => console.error('Error fetching agent.json:', error));
 }
 
 // add data agent to HTML
