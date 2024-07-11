@@ -48,3 +48,22 @@ There is 1 JavaScript file name script.js. I've used it to fetch data from JSON 
 ### JSON
 
 There are 2 JSON files that contain data of each class and agent's NPC.
+
+
+## Image Preview
+
+<img src="https://i.imgur.com/Voa4h3m.png">
+<br>
+<img src="https://i.imgur.com/HIZEbEv.png">
+<br>
+<img src="https://i.imgur.com/sUz3yow.png">
+<br>
+<img src="https://i.imgur.com/ufbEfXg.png">
+<br>
+<img src="https://i.imgur.com/h4dmWmb.png">
+<br>
+<img src="https://i.imgur.com/Pnoda78.png">
+<br>
+<img src="https://i.imgur.com/c7ibX1Y.png">
+<br>
+<img src="https://i.imgur.com/uDtsBSx.png">
