@@ -25,4 +25,11 @@ The Secret Service is static website with responsive design which provide inform
 2. Open the index.html file in your web browser or live with vs code.
 
 
-## 
+## Purpose
+
+To learn and practice front end skills by design UX/UI and coding.
+
+
+## Inside The Project
+
+1. 
