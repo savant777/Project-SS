@@ -25,27 +25,26 @@ The Secret Service is static website with responsive design which provide inform
 2. Open the index.html file in your web browser or live with vs code.
 
 
-## Purpose
-
-To learn and practice front end skills by design UX/UI and coding.
-
-
 ## Inside This Project
+
+It's my static website front end practice so it wouldn't have much function and database. Main function in this project are fetching and adding data from JSON file to HTML file. Another are previous/next page action on button click, and accept quest alert in Quests page.
+
+The challenge is this community has a lot of data which important for player to read and understand. And the data are not in the same pattern depend on each class so I've must design JSON and JavaScript function to add all the data to HTML file depend on each class too.
+
+In future, I'd like to make it dynamic website that admin can edit data and not have to deal with the code. Also add some features such as Login/Register, Accept/Report Quest, Get/Add items in the Stockpile, Items Select page, etc.
+
 ### HTML files
-- **index.html :** Home page.
-  - This page has community's name at the center and a button that link to register form.
-- **2-rule.html :** Rules page.
-  - This page has an "About" section to tell you about background and setting of this community.
-  - This page has an "Rules" section that show a list of rules you should know and following.
-- **3-howto.html :** How To Start page.
-  - This page has a basic information about how to create your character.
-- **4-info-status.html :** Information - Status & Skills page.
-  - This page has a an information about status & skills.
-- **5-info-class.html :** Information - Class page.
-  - This page has a list of class that you can click and lead to each class details page.
-- **class-detail.html :** Each Class Details page.
-  - These page have an information about each class.
-- **6-quests.html :** Quests page.
-  - This page has 3 quests that show details, date, and amount of agent.
-- **7-agents.html :** NPC page.
-  - This page has a list of NPC name and details.
+
+All the HTML files have navigation bar and footer in common and section at the center will be the content of the website.
+
+### CSS files
+
+There is 1 CSS file name style.css. I've used it along with Bootstrap 5 to make teal neon and futuristic design for the website.
+
+### JavaScript
+
+There is 1 JavaScript file name script.js. I've used it to fetch data from JSON file and add content to html automatically. Another function in the script are previous/next page button and alertbox for Quests page.
+
+### JSON
+
+There are 2 JSON files that contain data of each class and agent's NPC.
