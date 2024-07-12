@@ -6,7 +6,7 @@
   <a href="https://project-ss.onrender.com/" target="_blank">Live Preview</a>
 </p>
 
-The Secret Service is static website with responsive design which provide information for role-playing community.
+The Secret Service is static website with responsive design which provides information for role-playing community.
 
 
 ## Technologies Used
