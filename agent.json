@@ -2,25 +2,25 @@
     {
         "id" : 1,
         "codename" : "D1ÆZ",
-        "image" : "/SS-img/sspropic-d1az.png",
+        "image" : "SS-img/sspropic-d1az.png",
         "class": "The Ranger"
     },
     {
         "id" : 2,
         "codename" : "D3M0Z",
-        "image" : "/SS-img/sspropic-d3m0z.png",
+        "image" : "SS-img/sspropic-d3m0z.png",
         "class": "The Soldier"
     },
     {
         "id" : 3,
         "codename" : "T0Ri5",
-        "image" : "/SS-img/sspropic-t0ri5.png",
+        "image" : "SS-img/sspropic-t0ri5.png",
         "class": "The Technician"
     },
     {
         "id" : 4,
         "codename" : "Victory",
-        "image" : "/SS-img/sspropic-victory.png",
+        "image" : "SS-img/sspropic-victory.png",
         "class": "The Hacker"
     }
 ]
