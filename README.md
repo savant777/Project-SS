@@ -85,3 +85,9 @@ While current version serves as a comprehensive static guide, I plan to evolve *
    git clone https://github.com/savant777/Project-SS.git
    ```
 2. Open `index.html` in your web browser or use VS Code Live Server.
+
+---
+
+## 📜 License
+
+MIT License
