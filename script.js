@@ -17,7 +17,7 @@ let ClassList = document.getElementById('classlist');
 function addClassList() {
     classes.forEach(ssclass => {
         let newClasses = document.createElement('a');
-        newClasses.href = '/class-detail.html?id=' + ssclass.id;
+        newClasses.href = 'class-detail.html?id=' + ssclass.id;
         newClasses.classList.add('theclass', 'ssneon', 'orbitron');
         newClasses.style.backgroundImage = "var(--blue-rgb5), url(" + ssclass.image + ")";
         newClasses.innerHTML = `
