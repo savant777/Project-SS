@@ -1,7 +1,7 @@
 # Project-SS: The Secret Service Website
 
 <p align="center">
-  <img src="https://i.imgur.com/cKGMjug.png" width="800">
+  <img src="https://i.imgur.com/cKGMjug.png">
   <br>
   <a href="https://savant777.github.io/Project-SS/" target="_blank"><strong>🚀 Live Preview</strong></a>
 </p>
